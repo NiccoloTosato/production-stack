@@ -211,7 +211,7 @@ spec:
             {{- if hasKey $modelSpec "pvcStorage" }}
             value: /data
             {{- else }}
-            value: /tmp
+            value: /data/shared-pvc-storage
             {{- end }}
           - name: POD_IP
             valueFrom:
